@@ -294,8 +294,12 @@ layout: default
                 <h4 class="skill-category-title">AWS Certifications</h4>
                 <div class="skills">
                     <span class="skill">AWS Certified AI Practitioner</span>
+                    <span class="skill">AWS Certified Solutions Architect</span>
+                    <span class="skill">AWS Certified Cloud Practitioner</span>
                     <span class="skill">AWS Generative AI Foundational (L100)</span>
                     <span class="skill">AWS Knowledge: Networking Core</span>
+                    <span class="skill">AWS Financial Services</span>
+                    <span class="skill">Well-Architected Proficient</span>
                     <span class="skill">AWS Partner: Cloud Economics Accreditation</span>
                 </div>
             </div>
@@ -306,6 +310,7 @@ layout: default
                     <span class="skill">CISSP® - Certified Information Systems Security Professional</span>
                     <span class="skill">CCSP (ISC)2 Certified Cloud Security Professional</span>
                     <span class="skill">Microsoft Certified: Azure Fundamentals</span>
+                    <span class="skill">Architecting Azure Infrastructure</span>
                 </div>
             </div>
             
@@ -313,6 +318,8 @@ layout: default
                 <h4 class="skill-category-title">Network & Infrastructure</h4>
                 <div class="skills">
                     <span class="skill">CCSP - Cisco Certified Security Professional</span>
+                    <span class="skill">CCNA - Cisco Certified Network Associate</span>
+                    <span class="skill">CCNP - Cisco Certified Network Professional</span>
                 </div>
             </div>
         </div>

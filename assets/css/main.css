@@ -14,20 +14,14 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    background-color: #f8fafc;
-    color: #1f2937;
+    background-color: #f8fafc !important;
+    color: #1f2937 !important;
     transition: all 0.3s ease;
 }
 
 /* DARK THEME */
 body.dark-theme {
-    background-color: #1a202c !important;
-    color: #e2e8f0 !important;
-}
-
-/* Test - make it super obvious */
-body.dark-theme {
-    background: #000000 !important;
+    background-color: #000000 !important;
     color: #ffffff !important;
 }
 
@@ -95,28 +89,54 @@ body.dark-theme .duration {
     border: 1px solid #718096;
 }
 
+/* Light theme text colors */
+.section-title {
+    color: #1f2937 !important;
+}
+
+.job-title {
+    color: #1f2937 !important;
+}
+
+.company {
+    color: #3b82f6 !important;
+}
+
+.achievements li {
+    color: #4a5568 !important;
+}
+
+.skill-category-title {
+    color: #1f2937 !important;
+}
+
+.summary {
+    color: #4a5568 !important;
+}
+
+/* Dark theme text colors */
 body.dark-theme .section-title {
-    color: #e2e8f0;
+    color: #ffffff !important;
 }
 
 body.dark-theme .job-title {
-    color: #e2e8f0;
+    color: #ffffff !important;
 }
 
 body.dark-theme .company {
-    color: #63b3ed;
+    color: #63b3ed !important;
 }
 
 body.dark-theme .achievements li {
-    color: #cbd5e0;
+    color: #e2e8f0 !important;
 }
 
 body.dark-theme .skill-category-title {
-    color: #e2e8f0;
+    color: #ffffff !important;
 }
 
 body.dark-theme .summary {
-    color: #cbd5e0;
+    color: #e2e8f0 !important;
 }
 
 * {

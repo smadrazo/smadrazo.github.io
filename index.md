@@ -35,10 +35,7 @@ layout: default
             {% endif %}
         </div>
     </div>
-    <button class="theme-toggle no-print" title="Toggle Dark/Light Mode" onclick="toggleTheme()">
-        <i class="fas fa-moon" id="theme-icon"></i>
-        <span id="theme-text" style="margin-left: 0.5rem; font-size: 0.75rem;">Light</span>
-    </button>
+
     <button class="print-btn no-print">
         <i class="fas fa-print"></i> Print Resume
     </button>

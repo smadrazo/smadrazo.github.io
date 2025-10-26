@@ -27,95 +27,17 @@
     </div>
     
     <script>
-        // Theme Toggle Functionality
-        function toggleTheme() {
-            console.log('toggleTheme function called!'); // Debug
-            
-            const body = document.body;
-            const themeIcon = document.getElementById('theme-icon');
-            const themeText = document.getElementById('theme-text');
-            const isDark = body.classList.contains('dark-theme');
-            
-            console.log('Body element:', body); // Debug
-            console.log('Current theme:', isDark ? 'dark' : 'light'); // Debug
-            console.log('Body classes before:', body.className); // Debug
-            
-            if (isDark) {
-                // Switch to LIGHT theme
-                body.classList.remove('dark-theme');
-                body.style.backgroundColor = '#f8fafc'; // Light background
-                body.style.color = '#1f2937'; // Dark text
-                themeIcon.className = 'fas fa-moon';
-                if (themeText) themeText.textContent = 'Light';
-                localStorage.setItem('theme', 'light');
-                console.log('Switched to light theme'); // Debug log
-            } else {
-                // Switch to DARK theme
-                body.classList.add('dark-theme');
-                body.style.backgroundColor = '#000000'; // Dark background
-                body.style.color = '#ffffff'; // Light text
-                themeIcon.className = 'fas fa-sun';
-                if (themeText) themeText.textContent = 'Dark';
-                localStorage.setItem('theme', 'dark');
-                console.log('Switched to dark theme'); // Debug log
-            }
-            
-            console.log('Body classes after:', body.className); // Debug
-            console.log('Body background color:', body.style.backgroundColor); // Debug
-            console.log('Body text color:', body.style.color); // Debug
-        }
-
-        // Initialize theme on page load
-        function initTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const theme = savedTheme || 'light'; // Default to light theme
-            
-            console.log('Initializing theme:', theme); // Debug log
-            
-            const body = document.body;
-            const themeIcon = document.getElementById('theme-icon');
-            const themeText = document.getElementById('theme-text');
-            
-            if (theme === 'dark') {
-                body.classList.add('dark-theme');
-                body.style.backgroundColor = '#000000'; // Dark background
-                body.style.color = '#ffffff'; // Light text
-                if (themeIcon) themeIcon.className = 'fas fa-sun';
-                if (themeText) themeText.textContent = 'Dark';
-            } else {
-                body.classList.remove('dark-theme');
-                body.style.backgroundColor = '#f8fafc'; // Light background
-                body.style.color = '#1f2937'; // Dark text
-                if (themeIcon) themeIcon.className = 'fas fa-moon';
-                if (themeText) themeText.textContent = 'Light';
-            }
-            
-            console.log('Theme initialized. Body classes:', body.className);
-            console.log('Body background:', body.style.backgroundColor);
-            console.log('Body color:', body.style.color);
-        }
-
         // Print functionality
         function printResume() {
             window.print();
         }
         
-        // Initialize everything when DOM is loaded
+        // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize theme
-            initTheme();
-            
             // Add print button functionality
             const printBtn = document.querySelector('.print-btn');
             if (printBtn) {
                 printBtn.addEventListener('click', printResume);
-            }
-            
-            // Add theme toggle functionality
-            const themeToggle = document.querySelector('.theme-toggle');
-            if (themeToggle) {
-                themeToggle.addEventListener('click', toggleTheme);
             }
             
             // Add smooth scrolling to all links
@@ -153,26 +75,6 @@
                 section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                 observer.observe(section);
             });
-        });
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                const theme = e.matches ? 'dark' : 'light';
-                const body = document.body;
-                const themeIcon = document.getElementById('theme-icon');
-                const themeText = document.getElementById('theme-text');
-                
-                if (theme === 'dark') {
-                    body.classList.add('dark-theme');
-                    if (themeIcon) themeIcon.className = 'fas fa-sun';
-                    if (themeText) themeText.textContent = 'Dark';
-                } else {
-                    body.classList.remove('dark-theme');
-                    if (themeIcon) themeIcon.className = 'fas fa-moon';
-                    if (themeText) themeText.textContent = 'Light';
-                }
-            }
         });
     </script>
 </body>

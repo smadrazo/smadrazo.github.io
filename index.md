@@ -237,32 +237,86 @@ layout: default
         
         <div class="skills-grid">
             <div class="skill-category">
-                <h4 class="skill-category-title">Architecture & Security</h4>
+                <h4 class="skill-category-title">Cloud Platforms & Services</h4>
                 <div class="skills">
-                    <span class="skill">Security Architecture</span>
+                    <span class="skill">Amazon Web Services (AWS)</span>
+                    <span class="skill">Microsoft Azure</span>
+                    <span class="skill">AWS ProServe</span>
+                    <span class="skill">AWS AI/ML Services</span>
+                    <span class="skill">AWS Well-Architected Framework</span>
+                    <span class="skill">Azure Infrastructure</span>
+                    <span class="skill">Hybrid Cloud Solutions</span>
+                    <span class="skill">Multi-Cloud Architecture</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4 class="skill-category-title">Architecture & Design</h4>
+                <div class="skills">
                     <span class="skill">Enterprise Architecture</span>
+                    <span class="skill">Security Architecture</span>
                     <span class="skill">Cloud Architecture</span>
                     <span class="skill">Network Architecture</span>
+                    <span class="skill">Data Center Architecture</span>
+                    <span class="skill">TOGAF Methodology</span>
+                    <span class="skill">Solution Architecture</span>
+                    <span class="skill">Microservices Architecture</span>
                 </div>
             </div>
             
             <div class="skill-category">
-                <h4 class="skill-category-title">Cloud Platforms</h4>
+                <h4 class="skill-category-title">Security & Compliance</h4>
                 <div class="skills">
-                    <span class="skill">AWS</span>
-                    <span class="skill">Azure</span>
-                    <span class="skill">Infrastructure Automation</span>
+                    <span class="skill">Cybersecurity Frameworks</span>
+                    <span class="skill">Information Security</span>
+                    <span class="skill">Cloud Security</span>
+                    <span class="skill">Network Security</span>
+                    <span class="skill">Governance & Compliance</span>
+                    <span class="skill">Risk Management</span>
+                    <span class="skill">Security Controls</span>
+                    <span class="skill">Threat Analysis</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4 class="skill-category-title">Network & Infrastructure</h4>
+                <div class="skills">
+                    <span class="skill">Cisco Technologies</span>
+                    <span class="skill">Network Design</span>
+                    <span class="skill">Firewalls & IPS</span>
+                    <span class="skill">VPN Solutions</span>
+                    <span class="skill">Load Balancers</span>
+                    <span class="skill">DNS & DHCP</span>
+                    <span class="skill">Network Monitoring</span>
+                    <span class="skill">Data Center Networking</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4 class="skill-category-title">DevOps & Automation</h4>
+                <div class="skills">
+                    <span class="skill">Infrastructure as Code</span>
                     <span class="skill">CI/CD Pipelines</span>
+                    <span class="skill">Infrastructure Automation</span>
+                    <span class="skill">Workflow Automation</span>
+                    <span class="skill">Configuration Management</span>
+                    <span class="skill">Monitoring & Logging</span>
+                    <span class="skill">Performance Optimization</span>
+                    <span class="skill">Capacity Planning</span>
                 </div>
             </div>
             
             <div class="skill-category">
-                <h4 class="skill-category-title">Specializations</h4>
+                <h4 class="skill-category-title">Leadership & Business</h4>
                 <div class="skills">
-                    <span class="skill">CyberSecurity</span>
-                    <span class="skill">Financial Services</span>
                     <span class="skill">Team Leadership</span>
-                    <span class="skill">TOGAF</span>
+                    <span class="skill">Technical Mentoring</span>
+                    <span class="skill">Project Management</span>
+                    <span class="skill">Stakeholder Management</span>
+                    <span class="skill">Financial Services Industry</span>
+                    <span class="skill">Energy Sector</span>
+                    <span class="skill">Vendor Management</span>
+                    <span class="skill">Strategic Planning</span>
                 </div>
             </div>
         </div>
@@ -305,7 +359,7 @@ layout: default
         </div>
     </section>
 
-   <!-- > <section class="section">
+    <section class="section">
         <h3 class="section-title">Projects</h3>
         
         <div class="project-item">
@@ -328,5 +382,5 @@ layout: default
                 <span class="tech-tag">Stripe API</span>
             </div>
         </div>
-    </section> -->
+    </section>
 </main>

@@ -37,6 +37,7 @@ layout: default
     </div>
     <button class="theme-toggle no-print" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
         <i class="fas fa-moon" id="theme-icon"></i>
+        <span id="theme-text" style="margin-left: 0.5rem; font-size: 0.75rem;">Light</span>
     </button>
     <button class="print-btn no-print" onclick="printResume()">
         <i class="fas fa-print"></i> Print Resume
@@ -362,30 +363,6 @@ layout: default
         </div>
     </section>
 
-    <section class="section">
-        <h3 class="section-title">Projects</h3>
-        
-        <div class="project-item">
-            <div class="project-header">
-                <h4 class="project-title">E-commerce Platform</h4>
-                <div class="project-links">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                </div>
-            </div>
-            <p class="project-description">
-                Full-stack e-commerce solution with React frontend, Node.js backend, 
-                and PostgreSQL database. Features include user authentication, payment processing, 
-                and admin dashboard.
-            </p>
-            <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Stripe API</span>
-            </div>
-        </div>
-    </section>
 </main>
 
 <script>
@@ -393,17 +370,27 @@ layout: default
 function toggleTheme() {
     const html = document.documentElement;
     const themeIcon = document.getElementById('theme-icon');
+    const themeText = document.getElementById('theme-text');
     const currentTheme = html.getAttribute('data-theme');
+    
+    console.log('Current theme:', currentTheme); // Debug log
     
     if (currentTheme === 'dark') {
         html.setAttribute('data-theme', 'light');
         themeIcon.className = 'fas fa-moon';
+        if (themeText) themeText.textContent = 'Light';
         localStorage.setItem('theme', 'light');
+        console.log('Switched to light theme'); // Debug log
     } else {
         html.setAttribute('data-theme', 'dark');
         themeIcon.className = 'fas fa-sun';
+        if (themeText) themeText.textContent = 'Dark';
         localStorage.setItem('theme', 'dark');
+        console.log('Switched to dark theme'); // Debug log
     }
+    
+    // Add a visual flash to confirm the change
+    document.body.style.transition = 'all 0.3s ease';
 }
 
 // Initialize theme on page load
@@ -412,9 +399,18 @@ function initTheme() {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const theme = savedTheme || (prefersDark ? 'dark' : 'light');
     
+    console.log('Initializing theme:', theme); // Debug log
+    
     document.documentElement.setAttribute('data-theme', theme);
     const themeIcon = document.getElementById('theme-icon');
-    themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    const themeText = document.getElementById('theme-text');
+    
+    if (themeIcon) {
+        themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+    if (themeText) {
+        themeText.textContent = theme === 'dark' ? 'Dark' : 'Light';
+    }
 }
 
 // Print functionality

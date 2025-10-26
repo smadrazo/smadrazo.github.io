@@ -215,7 +215,7 @@ layout: default
         </div>
     </section>
 
-    <section class="section">
+   <!-- <section class="section">
         <h3 class="section-title">Projects</h3>
         
         <div class="project-item">
@@ -238,5 +238,5 @@ layout: default
                 <span class="tech-tag">Stripe API</span>
             </div>
         </div>
-    </section>
+    </section> -->
 </main>

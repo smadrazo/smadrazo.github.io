@@ -35,11 +35,11 @@ layout: default
             {% endif %}
         </div>
     </div>
-    <button class="theme-toggle no-print" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+    <button class="theme-toggle no-print" title="Toggle Dark/Light Mode">
         <i class="fas fa-moon" id="theme-icon"></i>
         <span id="theme-text" style="margin-left: 0.5rem; font-size: 0.75rem;">Light</span>
     </button>
-    <button class="print-btn no-print" onclick="printResume()">
+    <button class="print-btn no-print">
         <i class="fas fa-print"></i> Print Resume
     </button>
 </header>
@@ -365,104 +365,3 @@ layout: default
 
 </main>
 
-<script>
-// Theme Toggle Functionality
-function toggleTheme() {
-    const body = document.body;
-    const themeIcon = document.getElementById('theme-icon');
-    const themeText = document.getElementById('theme-text');
-    const isDark = body.classList.contains('dark-theme');
-    
-    console.log('Current theme:', isDark ? 'dark' : 'light'); // Debug log
-    
-    if (isDark) {
-        body.classList.remove('dark-theme');
-        themeIcon.className = 'fas fa-moon';
-        if (themeText) themeText.textContent = 'Light';
-        localStorage.setItem('theme', 'light');
-        console.log('Switched to light theme'); // Debug log
-    } else {
-        body.classList.add('dark-theme');
-        themeIcon.className = 'fas fa-sun';
-        if (themeText) themeText.textContent = 'Dark';
-        localStorage.setItem('theme', 'dark');
-        console.log('Switched to dark theme'); // Debug log
-    }
-}
-
-// Initialize theme on page load
-function initTheme() {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-    
-    console.log('Initializing theme:', theme); // Debug log
-    
-    const body = document.body;
-    const themeIcon = document.getElementById('theme-icon');
-    const themeText = document.getElementById('theme-text');
-    
-    if (theme === 'dark') {
-        body.classList.add('dark-theme');
-        if (themeIcon) themeIcon.className = 'fas fa-sun';
-        if (themeText) themeText.textContent = 'Dark';
-    } else {
-        body.classList.remove('dark-theme');
-        if (themeIcon) themeIcon.className = 'fas fa-moon';
-        if (themeText) themeText.textContent = 'Light';
-    }
-}
-
-// Print functionality
-function printResume() {
-    window.print();
-}
-
-// Smooth scroll for internal links
-document.addEventListener('DOMContentLoaded', function() {
-    initTheme();
-    
-    // Add smooth scrolling to all links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-    
-    // Add animation on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-    
-    // Observe all sections
-    document.querySelectorAll('.section').forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(section);
-    });
-});
-
-// Listen for system theme changes
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (!localStorage.getItem('theme')) {
-        const theme = e.matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', theme);
-        const themeIcon = document.getElementById('theme-icon');
-        themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    }
-});
-</script>

@@ -1,0 +1,239 @@
+/* Print Styles */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+    
+    body {
+        background: white !important;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .container {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        background: white;
+    }
+    
+    .header {
+        background: #2563eb !important;
+        color: white !important;
+        padding: 1.5rem 1rem;
+        page-break-inside: avoid;
+    }
+    
+    .name {
+        font-size: 24pt;
+        margin-bottom: 0.25rem;
+    }
+    
+    .position {
+        font-size: 14pt;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 10pt;
+    }
+    
+    .contact-item a {
+        color: white !important;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .section {
+        margin-bottom: 1.5rem;
+        page-break-inside: avoid;
+    }
+    
+    .section-title {
+        font-size: 14pt;
+        color: #2563eb !important;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .section-title::after {
+        background: #2563eb !important;
+    }
+    
+    .summary {
+        font-size: 11pt;
+    }
+    
+    .experience-item {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        page-break-inside: avoid;
+    }
+    
+    .experience-header {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    .job-title {
+        font-size: 12pt;
+        font-weight: bold;
+        display: inline;
+    }
+    
+    .company {
+        font-weight: bold;
+        color: #2563eb !important;
+        display: inline;
+        margin-left: 0.5rem;
+    }
+    
+    .duration {
+        float: right;
+        font-size: 10pt;
+        color: #6b7280 !important;
+    }
+    
+    .achievements {
+        font-size: 10pt;
+        margin-top: 0.5rem;
+    }
+    
+    .achievements li {
+        margin-bottom: 0.25rem;
+    }
+    
+    .achievements li::before {
+        color: #2563eb !important;
+    }
+    
+    .education-item {
+        page-break-inside: avoid;
+    }
+    
+    .education-header {
+        display: block;
+    }
+    
+    .degree {
+        font-size: 11pt;
+        font-weight: bold;
+    }
+    
+    .school {
+        color: #2563eb !important;
+        font-weight: bold;
+        margin-left: 0.5rem;
+    }
+    
+    .skills-grid {
+        display: block;
+    }
+    
+    .skill-category {
+        background: #f9fafb !important;
+        padding: 0.75rem;
+        margin-bottom: 0.5rem;
+        border: 1px solid #e5e7eb;
+        page-break-inside: avoid;
+    }
+    
+    .skill-category-title {
+        font-size: 11pt;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    
+    .skill {
+        background: white !important;
+        border: 1px solid #e5e7eb;
+        font-size: 9pt;
+        padding: 0.125rem 0.5rem;
+    }
+    
+    .project-item {
+        background: #f9fafb !important;
+        border: 1px solid #e5e7eb;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        page-break-inside: avoid;
+    }
+    
+    .project-header {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-title {
+        font-size: 11pt;
+        font-weight: bold;
+    }
+    
+    .project-links {
+        float: right;
+        font-size: 9pt;
+    }
+    
+    .project-links a {
+        color: #2563eb !important;
+    }
+    
+    .project-description {
+        font-size: 10pt;
+        margin-bottom: 0.5rem;
+        clear: both;
+    }
+    
+    .tech-tag {
+        background: #2563eb !important;
+        color: white !important;
+        font-size: 8pt;
+        padding: 0.125rem 0.5rem;
+    }
+    
+    /* Hide elements that shouldn't print */
+    .no-print,
+    .print-btn {
+        display: none !important;
+    }
+    
+    /* Page breaks */
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    .experience-item,
+    .project-item {
+        page-break-inside: avoid;
+    }
+    
+    /* Ensure good page breaks */
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    
+    /* Links */
+    a {
+        text-decoration: none;
+    }
+    
+    /* Ensure colors print */
+    .header,
+    .section-title,
+    .company,
+    .school,
+    .tech-tag,
+    .achievements li::before {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+}

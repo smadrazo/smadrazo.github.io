@@ -1,15 +1,15 @@
 # Modern Professional Resume Template
 
-A cutting-edge, responsive HTML resume template with dark/light themes, built with Jekyll and optimized for GitHub Pages. Features contemporary design elements, smooth animations, and professional styling.
+A clean, responsive HTML resume template built with Jekyll and optimized for GitHub Pages. Features contemporary design elements, smooth animations, and professional styling focused on showcasing your experience and skills.
 
 ## ✨ Features
 
 ### 🎨 **Modern Design**
-- **Dark/Light Theme Toggle** - Automatic system preference detection with manual override
-- **Glassmorphism Effects** - Modern translucent elements with backdrop blur
-- **Card-Based Layout** - Contemporary sectioned design for better content organization
-- **Gradient Accents** - Sophisticated color schemes with smooth gradients
+- **Clean Professional Layout** - Elegant white design with blue gradient accents
+- **Card-Based Sections** - Contemporary sectioned design for better content organization
+- **Gradient Header** - Eye-catching blue gradient header with professional styling
 - **Smooth Animations** - Subtle hover effects and scroll-triggered animations
+- **Modern Typography** - Inter font family for excellent readability
 
 ### 📱 **Responsive & Accessible**
 - **Mobile-First Design** - Optimized for all screen sizes from mobile to desktop
@@ -25,8 +25,8 @@ A cutting-edge, responsive HTML resume template with dark/light themes, built wi
 ### ⚡ **Performance & UX**
 - **Fast Loading** - Optimized CSS with minimal dependencies
 - **Smooth Scrolling** - Enhanced navigation experience
-- **Theme Persistence** - Remembers user's theme preference
 - **Interactive Elements** - Engaging hover states and micro-interactions
+- **Clean Codebase** - Simple, maintainable code structure
 
 ## 🚀 Quick Start
 
@@ -61,29 +61,11 @@ A cutting-edge, responsive HTML resume template with dark/light themes, built wi
 
 ## 🎨 Customization
 
-### **Theme Configuration**
-The template includes both light and dark themes with automatic system preference detection:
-
-```css
-/* Light/Dark theme variables in assets/css/main.css */
-:root {
-    --primary-color: #6366f1;
-    --accent-color: #06b6d4;
-    /* ... more variables */
-}
-
-[data-theme="dark"] {
-    --text-primary: #f8fafc;
-    --bg-primary: #0f172a;
-    /* ... dark theme overrides */
-}
-```
-
 ### **Personal Information**
 Edit the variables in `_config.yml`:
 ```yaml
-name: "Sebastian Madrazo"
-title_position: "Sr. ProServe Cloud Architect"
+name: "Your Full Name"
+title_position: "Your Professional Title"
 email: "your.email@example.com"
 phone: "+1 (555) 123-4567"
 location: "City, State"
@@ -100,20 +82,20 @@ Update `index.md` with your professional information:
 - **Education** - Academic background and certifications
 - **Technical Skills** - Organized by categories (6 skill groups)
 - **Certifications** - Professional credentials in list format
-- **Projects** - Notable work and accomplishments
 
 ### **Visual Customization**
 Modify `assets/css/main.css` to customize:
 
-- **Colors** - CSS custom properties for consistent theming
-- **Typography** - Font families, sizes, and weights
-- **Layout** - Grid systems and spacing
-- **Animations** - Hover effects and transitions
-- **Components** - Card styles, buttons, and interactive elements
+- **Colors** - Primary blue (#3b82f6) and accent cyan (#06b6d4) colors
+- **Typography** - Inter font family with professional hierarchy
+- **Layout** - Card-based design with consistent spacing
+- **Animations** - Hover effects and smooth transitions
+- **Components** - Section styling, buttons, and interactive elements
 
-### **Advanced Features**
-- **Theme Toggle** - Automatic dark/light mode switching
-- **Smooth Animations** - Scroll-triggered and hover animations
+### **Design Features**
+- **Blue Gradient Header** - Professional header with contact information
+- **Card-Based Sections** - Clean, organized content presentation
+- **Hover Effects** - Interactive elements with smooth transitions
 - **Responsive Design** - Mobile-first approach with breakpoints
 - **Print Optimization** - Professional PDF export styling
 
@@ -184,20 +166,20 @@ Modify `assets/css/main.css` to customize:
 
 ## 🌟 Key Features Explained
 
-### **Theme System**
-- **Auto-Detection** - Respects system dark/light preference
-- **Manual Toggle** - Theme switcher in header
-- **Persistence** - Remembers user choice
-- **Smooth Transitions** - Animated theme switching
+### **Professional Design**
+- **Clean Layout** - Focused on content with minimal distractions
+- **Blue Gradient Header** - Eye-catching professional header design
+- **Card-Based Sections** - Organized, scannable content structure
+- **Consistent Styling** - Unified design language throughout
 
 ### **Modern Design Elements**
-- **Glassmorphism** - Translucent cards with backdrop blur
-- **Micro-Animations** - Subtle hover and scroll effects
-- **Gradient Accents** - Contemporary color schemes
-- **Card Layout** - Organized, scannable content structure
+- **Subtle Animations** - Smooth hover and scroll effects
+- **Professional Colors** - Blue and cyan gradient with clean whites/grays
+- **Typography Hierarchy** - Clear information structure with Inter font
+- **Interactive Elements** - Engaging hover states and transitions
 
 ### **Responsive Behavior**
-- **Mobile-First** - Optimized for small screens
+- **Mobile-First** - Optimized for small screens first
 - **Touch-Friendly** - Enhanced mobile interactions
 - **Flexible Grid** - Adapts to any screen size
 - **Progressive Enhancement** - Works without JavaScript
@@ -233,8 +215,9 @@ Modify `assets/css/main.css` to customize:
 ---
 
 ### 💡 **Pro Tips**
-- **Customize colors** using CSS custom properties for brand consistency
-- **Test print output** regularly during customization
-- **Optimize images** if adding profile photos or project screenshots
-- **Keep content concise** - focus on achievements and impact
+- **Customize colors** by editing the blue (#3b82f6) and cyan (#06b6d4) values in main.css
+- **Test print output** regularly during customization using the print button
+- **Keep content concise** - focus on achievements and quantifiable impact
 - **Use action verbs** in experience descriptions for better ATS compatibility
+- **Maintain consistency** in formatting across all sections
+- **Update contact information** in _config.yml before deploying

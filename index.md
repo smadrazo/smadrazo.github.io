@@ -368,29 +368,26 @@ layout: default
 <script>
 // Theme Toggle Functionality
 function toggleTheme() {
-    const html = document.documentElement;
+    const body = document.body;
     const themeIcon = document.getElementById('theme-icon');
     const themeText = document.getElementById('theme-text');
-    const currentTheme = html.getAttribute('data-theme');
+    const isDark = body.classList.contains('dark-theme');
     
-    console.log('Current theme:', currentTheme); // Debug log
+    console.log('Current theme:', isDark ? 'dark' : 'light'); // Debug log
     
-    if (currentTheme === 'dark') {
-        html.setAttribute('data-theme', 'light');
+    if (isDark) {
+        body.classList.remove('dark-theme');
         themeIcon.className = 'fas fa-moon';
         if (themeText) themeText.textContent = 'Light';
         localStorage.setItem('theme', 'light');
         console.log('Switched to light theme'); // Debug log
     } else {
-        html.setAttribute('data-theme', 'dark');
+        body.classList.add('dark-theme');
         themeIcon.className = 'fas fa-sun';
         if (themeText) themeText.textContent = 'Dark';
         localStorage.setItem('theme', 'dark');
         console.log('Switched to dark theme'); // Debug log
     }
-    
-    // Add a visual flash to confirm the change
-    document.body.style.transition = 'all 0.3s ease';
 }
 
 // Initialize theme on page load
@@ -401,15 +398,18 @@ function initTheme() {
     
     console.log('Initializing theme:', theme); // Debug log
     
-    document.documentElement.setAttribute('data-theme', theme);
+    const body = document.body;
     const themeIcon = document.getElementById('theme-icon');
     const themeText = document.getElementById('theme-text');
     
-    if (themeIcon) {
-        themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    }
-    if (themeText) {
-        themeText.textContent = theme === 'dark' ? 'Dark' : 'Light';
+    if (theme === 'dark') {
+        body.classList.add('dark-theme');
+        if (themeIcon) themeIcon.className = 'fas fa-sun';
+        if (themeText) themeText.textContent = 'Dark';
+    } else {
+        body.classList.remove('dark-theme');
+        if (themeIcon) themeIcon.className = 'fas fa-moon';
+        if (themeText) themeText.textContent = 'Light';
     }
 }
 

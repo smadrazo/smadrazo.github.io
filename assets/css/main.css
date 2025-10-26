@@ -1,4 +1,4 @@
-/* Modern Resume with Working Dark/Light Theme */
+/* Simple Working Dark/Light Theme */
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Light Theme (Default) */
+/* LIGHT THEME (Default) */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
@@ -19,42 +19,104 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Dark Theme */
+/* DARK THEME */
 body.dark-theme {
-    background-color: #111827;
-    color: #f9fafb;
+    background-color: #1a202c !important;
+    color: #e2e8f0 !important;
 }
 
-/* Light Theme Variables */
-body {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --bg-tertiary: #f1f5f9;
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
-    --text-muted: #9ca3af;
-    --primary-color: #3b82f6;
-    --accent-color: #06b6d4;
-    --border-color: #e5e7eb;
-    --shadow-light: rgba(0, 0, 0, 0.1);
-    --shadow-medium: rgba(0, 0, 0, 0.15);
-    --header-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+/* Test - make it super obvious */
+body.dark-theme {
+    background: #000000 !important;
+    color: #ffffff !important;
 }
 
-/* Dark Theme Variables */
-body.dark-theme {
-    --bg-primary: #1f2937;
-    --bg-secondary: #111827;
-    --bg-tertiary: #374151;
-    --text-primary: #f9fafb;
-    --text-secondary: #d1d5db;
-    --text-muted: #9ca3af;
-    --primary-color: #60a5fa;
-    --accent-color: #34d399;
-    --border-color: #4b5563;
-    --shadow-light: rgba(0, 0, 0, 0.3);
-    --shadow-medium: rgba(0, 0, 0, 0.4);
-    --header-gradient: linear-gradient(135deg, #1e40af 0%, #059669 100%);
+/* Light Theme Styles */
+.container {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+.section {
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.experience-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+.skill-category {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+.skill {
+    background-color: #f1f5f9;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+}
+
+.duration {
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+}
+
+/* Dark Theme Styles */
+body.dark-theme .container {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+}
+
+body.dark-theme .section {
+    background-color: #1a202c;
+    border: 1px solid #4a5568;
+}
+
+body.dark-theme .experience-item {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+}
+
+body.dark-theme .skill-category {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+}
+
+body.dark-theme .skill {
+    background-color: #4a5568;
+    color: #e2e8f0;
+    border: 1px solid #718096;
+}
+
+body.dark-theme .duration {
+    background-color: #4a5568;
+    border: 1px solid #718096;
+}
+
+body.dark-theme .section-title {
+    color: #e2e8f0;
+}
+
+body.dark-theme .job-title {
+    color: #e2e8f0;
+}
+
+body.dark-theme .company {
+    color: #63b3ed;
+}
+
+body.dark-theme .achievements li {
+    color: #cbd5e0;
+}
+
+body.dark-theme .skill-category-title {
+    color: #e2e8f0;
+}
+
+body.dark-theme .summary {
+    color: #cbd5e0;
 }
 
 * {
@@ -66,11 +128,9 @@ body.dark-theme {
 .container {
     max-width: 900px;
     margin: 2rem auto;
-    background: var(--bg-primary);
-    box-shadow: 0 20px 25px -5px var(--shadow-light), 0 10px 10px -5px var(--shadow-light);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     overflow: hidden;
-    border: 1px solid var(--border-color);
     transition: all 0.3s ease;
     position: relative;
 }
@@ -82,17 +142,25 @@ body.dark-theme {
     left: 0;
     right: 0;
     height: 4px;
-    background: var(--header-gradient);
+    background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
     z-index: 10;
+}
+
+body.dark-theme .container::before {
+    background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
 }
 
 /* Header */
 .header {
-    background: var(--header-gradient);
+    background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
     color: white;
     padding: 4rem 2rem 3rem;
     position: relative;
     transition: all 0.3s ease;
+}
+
+body.dark-theme .header {
+    background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
 }
 
 .header-content {
@@ -221,17 +289,14 @@ body.dark-theme {
 /* Main Content */
 .main-content {
     padding: 3rem 2.5rem;
-    background: var(--bg-primary);
     transition: all 0.3s ease;
 }
 
 .section {
     margin-bottom: 3rem;
-    background: var(--bg-secondary);
     border-radius: 16px;
     padding: 2rem;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 4px 6px -1px var(--shadow-light), 0 2px 4px -1px var(--shadow-light);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
 }
@@ -243,19 +308,27 @@ body.dark-theme {
     left: 0;
     right: 0;
     height: 3px;
-    background: var(--primary-color);
+    background: #3b82f6;
     border-radius: 16px 16px 0 0;
+}
+
+body.dark-theme .section::before {
+    background: #60a5fa;
 }
 
 .section:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px var(--shadow-medium), 0 4px 6px -2px var(--shadow-medium);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-theme .section:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
 }
 
 .section-title {
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: #1f2937;
     margin-bottom: 2rem;
     position: relative;
     display: flex;
@@ -267,15 +340,23 @@ body.dark-theme {
     content: '';
     width: 4px;
     height: 2rem;
-    background: var(--primary-color);
+    background: #3b82f6;
     border-radius: 2px;
+}
+
+body.dark-theme .section-title::before {
+    background: #60a5fa;
 }
 
 .section-title::after {
     content: '';
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, var(--border-color) 0%, transparent 100%);
+    background: linear-gradient(90deg, #e2e8f0 0%, transparent 100%);
+}
+
+body.dark-theme .section-title::after {
+    background: linear-gradient(90deg, #4a5568 0%, transparent 100%);
 }
 
 /* Summary */

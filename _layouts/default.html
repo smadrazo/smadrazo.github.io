@@ -29,26 +29,36 @@
     <script>
         // Theme Toggle Functionality
         function toggleTheme() {
+            console.log('toggleTheme function called!'); // Debug
+            
             const body = document.body;
             const themeIcon = document.getElementById('theme-icon');
             const themeText = document.getElementById('theme-text');
             const isDark = body.classList.contains('dark-theme');
             
-            console.log('Current theme:', isDark ? 'dark' : 'light'); // Debug log
+            console.log('Body element:', body); // Debug
+            console.log('Current theme:', isDark ? 'dark' : 'light'); // Debug
+            console.log('Body classes before:', body.className); // Debug
             
             if (isDark) {
                 body.classList.remove('dark-theme');
+                body.style.backgroundColor = '#f8fafc'; // Force change
                 themeIcon.className = 'fas fa-moon';
                 if (themeText) themeText.textContent = 'Light';
                 localStorage.setItem('theme', 'light');
                 console.log('Switched to light theme'); // Debug log
             } else {
                 body.classList.add('dark-theme');
+                body.style.backgroundColor = '#000000'; // Force change
+                body.style.color = '#ffffff'; // Force change
                 themeIcon.className = 'fas fa-sun';
                 if (themeText) themeText.textContent = 'Dark';
                 localStorage.setItem('theme', 'dark');
                 console.log('Switched to dark theme'); // Debug log
             }
+            
+            console.log('Body classes after:', body.className); // Debug
+            console.log('Body background color:', body.style.backgroundColor); // Debug
         }
 
         // Initialize theme on page load

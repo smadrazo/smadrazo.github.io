@@ -223,30 +223,12 @@ layout: default
         </div>
 
         <div class="education-item">
-            <div class="education-header">
-                <h4 class="degree">CISSP® - Certified Information Systems Security Professional</h4>
-                <span class="school">ISC2</span>
-                <span class="duration">2010</span>
-            </div>
-            <p class="education-details">Computer and Information Systems Security/Information Assurance</p>
-        </div>
-
-        <div class="education-item">
-            <div class="education-header">
-                <h4 class="degree">CCSP (ISC)2 Certified Cloud Security Professional</h4>
-                <span class="school">ISC2</span>
-                <span class="duration">2019</span>
-            </div>
-            <p class="education-details">Cloud Security</p>
-        </div>
-
-        <div class="education-item">
-            <div class="education-header">
-                <h4 class="degree">CCSP - Cisco Certified Security Professional</h4>
-                <span class="school">Cisco Education</span>
-                <span class="duration">2008 - 2010</span>
-            </div>
-            <p class="education-details">Network Security</p>
+            <h4 class="degree">Professional Certifications</h4>
+            <ul class="achievements">
+                <li><strong>CISSP® - Certified Information Systems Security Professional</strong> - ISC2 (2010)</li>
+                <li><strong>CCSP (ISC)2 Certified Cloud Security Professional</strong> - ISC2 (2019)</li>
+                <li><strong>CCSP - Cisco Certified Security Professional</strong> - Cisco Education (2008-2010)</li>
+            </ul>
         </div>
     </section>
 
@@ -289,39 +271,37 @@ layout: default
     <section class="section">
         <h3 class="section-title">Certifications</h3>
         
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4 class="skill-category-title">AWS Certifications</h4>
-                <div class="skills">
-                    <span class="skill">AWS Certified AI Practitioner</span>
-                    <span class="skill">AWS Certified Solutions Architect</span>
-                    <span class="skill">AWS Certified Cloud Practitioner</span>
-                    <span class="skill">AWS Generative AI Foundational (L100)</span>
-                    <span class="skill">AWS Knowledge: Networking Core</span>
-                    <span class="skill">AWS Financial Services</span>
-                    <span class="skill">Well-Architected Proficient</span>
-                    <span class="skill">AWS Partner: Cloud Economics Accreditation</span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h4 class="skill-category-title">Security & Cloud</h4>
-                <div class="skills">
-                    <span class="skill">CISSP® - Certified Information Systems Security Professional</span>
-                    <span class="skill">CCSP (ISC)2 Certified Cloud Security Professional</span>
-                    <span class="skill">Microsoft Certified: Azure Fundamentals</span>
-                    <span class="skill">Architecting Azure Infrastructure</span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h4 class="skill-category-title">Network & Infrastructure</h4>
-                <div class="skills">
-                    <span class="skill">CCSP - Cisco Certified Security Professional</span>
-                    <span class="skill">CCNA - Cisco Certified Network Associate</span>
-                    <span class="skill">CCNP - Cisco Certified Network Professional</span>
-                </div>
-            </div>
+        <div class="experience-item">
+            <h4 class="job-title">AWS Certifications</h4>
+            <ul class="achievements">
+                <li>AWS Certified AI Practitioner</li>
+                <li>AWS Certified Solutions Architect</li>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>AWS Generative AI Foundational (L100)</li>
+                <li>AWS Knowledge: Networking Core</li>
+                <li>AWS Financial Services</li>
+                <li>Well-Architected Proficient</li>
+                <li>AWS Partner: Cloud Economics Accreditation</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <h4 class="job-title">Security & Cloud Certifications</h4>
+            <ul class="achievements">
+                <li>CISSP® - Certified Information Systems Security Professional</li>
+                <li>CCSP (ISC)2 Certified Cloud Security Professional</li>
+                <li>Microsoft Certified: Azure Fundamentals</li>
+                <li>Architecting Azure Infrastructure</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <h4 class="job-title">Network & Infrastructure Certifications</h4>
+            <ul class="achievements">
+                <li>CCSP - Cisco Certified Security Professional</li>
+                <li>CCNA - Cisco Certified Network Associate</li>
+                <li>CCNP - Cisco Certified Network Professional</li>
+            </ul>
         </div>
     </section>
 

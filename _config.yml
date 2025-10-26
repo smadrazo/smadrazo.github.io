@@ -6,12 +6,12 @@ baseurl: "/resume"
 # Personal Information
 name: "Sebastian Madrazo"
 title_position: "Cloud Architect"
-email: "your.email@example.com"
-phone: "+1 (555) 123-4567"
-location: "City, State"
-linkedin: "linkedin.com/in/yourprofile"
-github: "github.com/yourusername"
-website: "yourwebsite.com"
+email: "sebastian@madrazo.com.ar"
+phone: "+5411 30802025"
+location: "Ciudad Autonoma de Buenos Aires"
+linkedin: "https://www.linkedin.com/in/sebastianmadrazo/"
+github: "github.com/smadrazo"
+website: "madrazo.com.ar"
 
 # Build settings
 markdown: kramdown

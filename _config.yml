@@ -1,11 +1,11 @@
-title: "Your Name - Resume"
+title: "Sebastian Madrazo - Resume"
 description: "Professional Resume"
-url: "https://yourusername.github.io"
+url: "https://smadrazo.github.io"
 baseurl: "/resume"
 
 # Personal Information
-name: "Your Full Name"
-title_position: "Software Developer"
+name: "Sebastian Madrazo"
+title_position: "Cloud Architect"
 email: "your.email@example.com"
 phone: "+1 (555) 123-4567"
 location: "City, State"

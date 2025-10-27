@@ -43,7 +43,7 @@ layout: default
 
 <main class="main-content">
     <section class="section">
-        <h3 class="section-title">Professional Summary</h3>
+        <h3 class="section-title">About</h3>
         <p class="summary">
             Accomplished technology leader with 25+ years of progressive experience spanning network security, enterprise architecture, and cloud solutions across global Fortune 500 organizations. My career journey has evolved from technical support and systems administration at Siemens to security engineering leadership at Accenture, followed by 13 years of continuous advancement at ExxonMobil culminating in senior architect roles, and now serving in executive cloud architecture positions at Amazon Web Services.
             

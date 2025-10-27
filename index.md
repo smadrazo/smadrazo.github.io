@@ -42,21 +42,25 @@ layout: default
 </header>
 
 <main class="main-content">
-    <section class="section">
-        <h3 class="section-title">About</h3>
-        <p class="summary">
-            Accomplished technology leader with 25+ years of progressive experience spanning network security, enterprise architecture, and cloud solutions across global Fortune 500 organizations. My career journey has evolved from technical support and systems administration at Siemens to security engineering leadership at Accenture, followed by 13 years of continuous advancement at ExxonMobil culminating in senior architect roles, and now serving in executive cloud architecture positions at Amazon Web Services.
-            
-            Throughout my career, I have consistently demonstrated the ability to translate complex business requirements into resilient technical solutions, leading multidisciplinary teams and driving strategic initiatives. My expertise encompasses the full spectrum of enterprise technology - from foundational network infrastructure and cybersecurity frameworks to modern cloud architectures and AI implementations. I have successfully architected and implemented critical systems serving millions of users, developed automation workflows that transformed operational efficiency, and established security standards that became organizational benchmarks.
-            
-            As a certified professional holding CISSP, CCSP, and multiple AWS certifications, I bring deep technical proficiency combined with proven leadership capabilities. My experience spans multiple industries including energy, financial services, and technology consulting, providing me with unique insights into diverse business challenges and regulatory requirements. I excel at building high-performing teams, mentoring technical talent, and fostering innovation while maintaining strict governance and compliance standards.
-        </p>
-    </section>
+    <div class="container">
+        <section class="section about-section">
+            <div class="section-container">
+                <h3 class="section-title">About</h3>
+                <p class="summary">
+                    Accomplished technology leader with 25+ years of progressive experience spanning network security, enterprise architecture, and cloud solutions across global Fortune 500 organizations. My career journey has evolved from technical support and systems administration at Siemens to security engineering leadership at Accenture, followed by 13 years of continuous advancement at ExxonMobil culminating in senior architect roles, and now serving in executive cloud architecture positions at Amazon Web Services.
+                    
+                    Throughout my career, I have consistently demonstrated the ability to translate complex business requirements into resilient technical solutions, leading multidisciplinary teams and driving strategic initiatives. My expertise encompasses the full spectrum of enterprise technology - from foundational network infrastructure and cybersecurity frameworks to modern cloud architectures and AI implementations. I have successfully architected and implemented critical systems serving millions of users, developed automation workflows that transformed operational efficiency, and established security standards that became organizational benchmarks.
+                    
+                    As a certified professional holding CISSP, CCSP, and multiple AWS certifications, I bring deep technical proficiency combined with proven leadership capabilities. My experience spans multiple industries including energy, financial services, and technology consulting, providing me with unique insights into diverse business challenges and regulatory requirements. I excel at building high-performing teams, mentoring technical talent, and fostering innovation while maintaining strict governance and compliance standards.
+                </p>
+            </div>
+        </section>
 
-    <section class="section">
-        <h3 class="section-title">Experience</h3>
-        
-        <div class="experience-item">
+        <section class="section experience-section">
+            <div class="section-container">
+                <h3 class="section-title">Experience</h3>
+                <div class="experience-list">
+                    <div class="experience-item">
             <div class="experience-header">
                 <h4 class="job-title">Sr. ProServe Cloud Architect, Single Threaded Leader (STL)</h4>
                 <span class="company">Amazon Web Services (AWS)</span>
@@ -209,13 +213,16 @@ layout: default
                 <li>Provided technical support for network equipment and management software</li>
                 <li>Supported security solutions for data networks and NGN technologies</li>
             </ul>
-        </div>
-    </section>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section">
-        <h3 class="section-title">Education</h3>
-        
-        <div class="education-item">
+        <section class="section education-section">
+            <div class="section-container">
+                <h3 class="section-title">Education</h3>
+                <div class="education-list">
+                    <div class="education-item">
             <div class="education-header">
                 <h4 class="degree">Computer Science, Engineering</h4>
                 <span class="school">Universidad de Palermo</span>
@@ -230,13 +237,15 @@ layout: default
                 <li><strong>CCSP (ISC)2 Certified Cloud Security Professional</strong> - ISC2 (2019)</li>
                 <li><strong>CCSP - Cisco Certified Security Professional</strong> - Cisco Education (2008-2010)</li>
             </ul>
-        </div>
-    </section>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section">
-        <h3 class="section-title">Technical Skills</h3>
-        
-        <div class="skills-grid">
+        <section class="section skills-section">
+            <div class="section-container">
+                <h3 class="section-title">Technical Skills</h3>
+                <div class="skills-grid">
             <div class="skill-category">
                 <h4 class="skill-category-title">Cloud Platforms & Services</h4>
                 <div class="skills">
@@ -320,13 +329,15 @@ layout: default
                     <span class="skill">Strategic Planning</span>
                 </div>
             </div>
-        </div>
-    </section>
+                </div>
+            </div>
+        </section>
 
-    <section class="section">
-        <h3 class="section-title">Certifications</h3>
-        
-        <div class="experience-item">
+        <section class="section certifications-section">
+            <div class="section-container">
+                <h3 class="section-title">Certifications</h3>
+                <div class="certifications-list">
+                    <div class="certification-item">
             <h4 class="job-title">AWS Certifications</h4>
             <ul class="achievements">
                 <li>AWS Certified AI Practitioner</li>
@@ -340,8 +351,8 @@ layout: default
             </ul>
         </div>
         
-        <div class="experience-item">
-            <h4 class="job-title">Security & Cloud Certifications</h4>
+                    <div class="certification-item">
+                        <h4 class="job-title">Security & Cloud Certifications</h4>
             <ul class="achievements">
                 <li>CISSP® - Certified Information Systems Security Professional</li>
                 <li>CCSP (ISC)2 Certified Cloud Security Professional</li>
@@ -350,15 +361,17 @@ layout: default
             </ul>
         </div>
         
-        <div class="experience-item">
-            <h4 class="job-title">Network & Infrastructure Certifications</h4>
+                    <div class="certification-item">
+                        <h4 class="job-title">Network & Infrastructure Certifications</h4>
             <ul class="achievements">
                 <li>CCSP - Cisco Certified Security Professional</li>
                 <li>CCNA - Cisco Certified Network Associate</li>
                 <li>CCNP - Cisco Certified Network Professional</li>
             </ul>
-        </div>
-    </section>
-
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
 

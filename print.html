@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Madrazo - Resume (Print Version)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+            color: #333;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        .contact-info div {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+        }
+
+        .summary {
+            font-size: 1rem;
+            text-align: justify;
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+            page-break-inside: avoid;
+        }
+
+        .job-header {
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .company {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+        }
+
+        .duration {
+            float: right;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .achievements {
+            list-style-type: disc;
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        .achievements li {
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .degree {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .school {
+            margin-left: 0.5rem;
+            font-style: italic;
+        }
+
+        .skills-section {
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            margin-bottom: 1rem;
+        }
+
+        .skill-category-title {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .skills-list {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .certification-item {
+            margin-bottom: 1rem;
+        }
+
+        .cert-title {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .cert-list {
+            list-style-type: disc;
+            margin-left: 2rem;
+        }
+
+        .cert-list li {
+            margin-bottom: 0.2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                padding: 1rem;
+                font-size: 12pt;
+            }
+            
+            .no-print {
+                display: none;
+            }
+            
+            h1 { font-size: 18pt; }
+            h2 { font-size: 14pt; }
+            h3 { font-size: 14pt; }
+            
+            .experience-item,
+            .education-item,
+            .certification-item {
+                page-break-inside: avoid;
+            }
+        }
+
+        .print-note {
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: #f0f0f0;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .back-link a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-link no-print">
+        <a href="index.html">← Back to Interactive Resume</a>
+    </div>
+    
+    <div class="print-note no-print">
+        <strong>Print-Friendly Version</strong> - Use Ctrl+P (Cmd+P on Mac) to print or save as PDF
+    </div>
+
+    <h1>Sebastian Madrazo</h1>
+    <h2>Sr. ProServe Cloud Architect, Single Threaded Leader (STL)</h2>
+    
+    <div class="contact-info">
+        <div>sebastian@madrazo.com.ar</div>
+        <div>+5411 xxxxxx</div>
+        <div>Ciudad Autonoma de Buenos Aires</div>
+        <div>linkedin.com/in/sebastianmadrazo</div>
+        <div>github.com/smadrazo</div>
+        <div>madrazo.com.ar</div>
+    </div>
+
+    <h3>About</h3>
+    <div class="summary">
+        Accomplished technology leader with 25+ years of progressive experience spanning network security, enterprise architecture, and cloud solutions across global Fortune 500 organizations. My career journey has evolved from technical support and systems administration at Siemens to security engineering leadership at Accenture, followed by 13 years of continuous advancement at ExxonMobil culminating in senior architect roles, and now serving in executive cloud architecture positions at Amazon Web Services.
+        
+        Throughout my career, I have consistently demonstrated the ability to translate complex business requirements into resilient technical solutions, leading multidisciplinary teams and driving strategic initiatives. My expertise encompasses the full spectrum of enterprise technology - from foundational network infrastructure and cybersecurity frameworks to modern cloud architectures and AI implementations. I have successfully architected and implemented critical systems serving millions of users, developed automation workflows that transformed operational efficiency, and established security standards that became organizational benchmarks.
+        
+        As a certified professional holding CISSP, CCSP, and multiple AWS certifications, I bring deep technical proficiency combined with proven leadership capabilities. My experience spans multiple industries including energy, financial services, and technology consulting, providing me with unique insights into diverse business challenges and regulatory requirements. I excel at building high-performing teams, mentoring technical talent, and fostering innovation while maintaining strict governance and compliance standards.
+    </div>
+
+    <h3>Experience</h3>
+    
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Sr. ProServe Cloud Architect, Single Threaded Leader (STL)</span>
+            <span class="company">Amazon Web Services (AWS)</span>
+            <span class="duration">January 2025 - Present</span>
+        </div>
+        <ul class="achievements">
+            <li>Leading strategic cloud architecture initiatives as Single Threaded Leader</li>
+            <li>Designing and implementing secure cloud architectures using TOGAF methodologies</li>
+            <li>Translating customer business objectives into resilient, compliant solutions</li>
+            <li>Leading multidisciplinary teams to deliver enterprise cloud solutions</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Sr. Customer Delivery Architect</span>
+            <span class="company">Amazon Web Services (AWS)</span>
+            <span class="duration">November 2021 - January 2025</span>
+        </div>
+        <ul class="achievements">
+            <li>Orchestrated solutions for complex business challenges in cloud environments</li>
+            <li>Applied infrastructure automation and enhanced CI/CD pipelines</li>
+            <li>Ensured strategic alignment with cybersecurity objectives</li>
+            <li>Delivered cloud solutions for enterprise clients, particularly in financial services</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Data Center Solution Architect, IT Fellow</span>
+            <span class="company">ExxonMobil</span>
+            <span class="duration">February 2021 - November 2021</span>
+        </div>
+        <ul class="achievements">
+            <li>Architected enterprise data center solutions and infrastructure</li>
+            <li>Led technical design and implementation of critical systems</li>
+            <li>Provided expertise across multiple technical domains</li>
+            <li>Mentored technical teams and drove strategic initiatives</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Cloud Connectivity System Architect</span>
+            <span class="company">ExxonMobil</span>
+            <span class="duration">April 2019 - February 2021</span>
+        </div>
+        <ul class="achievements">
+            <li>Designed cloud connectivity solutions for global enterprise infrastructure</li>
+            <li>Implemented network architecture for hybrid cloud environments</li>
+            <li>Developed automation workflows and best practices</li>
+            <li>Managed network capacity and performance optimization</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Network System Architect</span>
+            <span class="company">ExxonMobil</span>
+            <span class="duration">August 2017 - April 2019</span>
+        </div>
+        <ul class="achievements">
+            <li>Architected global network systems and infrastructure solutions</li>
+            <li>Led network engineering and design initiatives</li>
+            <li>Implemented enterprise-scale network security solutions</li>
+            <li>Managed critical network infrastructure and performance</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Technical Lead - Global Engineering & Technical Support</span>
+            <span class="company">ExxonMobil</span>
+            <span class="duration">February 2015 - August 2017</span>
+        </div>
+        <ul class="achievements">
+            <li>Led global engineering teams and technical support operations</li>
+            <li>Drove delivery of quality products and services aligned with strategic objectives</li>
+            <li>Provided technical expertise and mentorship across multiple domains</li>
+            <li>Interfaced with customers and senior professionals on critical initiatives</li>
+            <li>Developed service strategy, workflow automation, and best practices</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Network & Voice - Global Engineering & Technical Support</span>
+            <span class="company">ExxonMobil</span>
+            <span class="duration">February 2013 - August 2015</span>
+        </div>
+        <ul class="achievements">
+            <li>Engineered data center solutions and network infrastructure</li>
+            <li>Provided technical support for critical technologies and services</li>
+            <li>Developed automation workflows and maintained service standards</li>
+            <li>Managed network capacity, performance, and vendor relationships</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Network Security Engineering & Technical Support</span>
+            <span class="company">ExxonMobil</span>
+            <span class="duration">January 2009 - February 2013</span>
+        </div>
+        <ul class="achievements">
+            <li>Engineered and implemented network security controls and infrastructure</li>
+            <li>Automated malicious site blocking with Cisco ASA</li>
+            <li>Served as Cisco IPS Primary Technical Steward</li>
+            <li>Implemented security threat processes and coordinated deployment activities</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Security Engineer Team Lead</span>
+            <span class="company">Accenture</span>
+            <span class="duration">March 2008 - December 2008</span>
+        </div>
+        <ul class="achievements">
+            <li>Led security engineering team and network security infrastructure implementation</li>
+            <li>Coordinated installation of firewalls, VPN switches, and intrusion detection systems</li>
+            <li>Managed network security deployment activities and customer interactions</li>
+            <li>Researched and resolved technology problems in global network environments</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Security Engineer</span>
+            <span class="company">Accenture</span>
+            <span class="duration">January 2007 - March 2008</span>
+        </div>
+        <ul class="achievements">
+            <li>Administered global IGA firewalls (Check Point Firewall-1)</li>
+            <li>Managed critical security infrastructure including DNS, authentication servers</li>
+            <li>Supported incident investigations as part of CIRC processes</li>
+            <li>Analyzed forensic reports and investigated security anomalies</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Technical Support Carrier ON - R-NCC LATINOAMERICA</span>
+            <span class="company">Siemens S.A</span>
+            <span class="duration">December 1999 - January 2007</span>
+        </div>
+        <ul class="achievements">
+            <li>Administered ICSI and ICTS systems for Siemens Latin America</li>
+            <li>Designed system interfaces between ICSI and other enterprise systems</li>
+            <li>Provided technical support for network equipment and management software</li>
+            <li>Supported security solutions for data networks and NGN technologies</li>
+        </ul>
+    </div>
+
+    <h3>Education</h3>
+    
+    <div class="education-item">
+        <span class="degree">Computer Science, Engineering</span>
+        <span class="school">Universidad de Palermo</span>
+        <span class="duration">2004 - 2012</span>
+    </div>
+
+    <div class="education-item">
+        <div class="degree">Professional Certifications</div>
+        <ul class="achievements">
+            <li><strong>CISSP® - Certified Information Systems Security Professional</strong> - ISC2 (2010)</li>
+            <li><strong>CCSP (ISC)2 Certified Cloud Security Professional</strong> - ISC2 (2019)</li>
+            <li><strong>CCSP - Cisco Certified Security Professional</strong> - Cisco Education (2008-2010)</li>
+        </ul>
+    </div>
+
+    <h3>Technical Skills</h3>
+    
+    <div class="skills-section">
+        <div class="skill-category">
+            <div class="skill-category-title">Cloud Platforms & Services</div>
+            <div class="skills-list">Amazon Web Services (AWS), Microsoft Azure, AWS ProServe, AWS AI/ML Services, AWS Well-Architected Framework, Azure Infrastructure, Hybrid Cloud Solutions, Multi-Cloud Architecture</div>
+        </div>
+        
+        <div class="skill-category">
+            <div class="skill-category-title">Architecture & Design</div>
+            <div class="skills-list">Enterprise Architecture, Security Architecture, Cloud Architecture, Network Architecture, Data Center Architecture, TOGAF Methodology, Solution Architecture, Microservices Architecture</div>
+        </div>
+        
+        <div class="skill-category">
+            <div class="skill-category-title">Security & Compliance</div>
+            <div class="skills-list">Cybersecurity Frameworks, Information Security, Cloud Security, Network Security, Governance & Compliance, Risk Management, Security Controls, Threat Analysis</div>
+        </div>
+        
+        <div class="skill-category">
+            <div class="skill-category-title">Network & Infrastructure</div>
+            <div class="skills-list">Cisco Technologies, Network Design, Firewalls & IPS, VPN Solutions, Load Balancers, DNS & DHCP, Network Monitoring, Data Center Networking</div>
+        </div>
+        
+        <div class="skill-category">
+            <div class="skill-category-title">DevOps & Automation</div>
+            <div class="skills-list">Infrastructure as Code, CI/CD Pipelines, Infrastructure Automation, Workflow Automation, Configuration Management, Monitoring & Logging, Performance Optimization, Capacity Planning</div>
+        </div>
+        
+        <div class="skill-category">
+            <div class="skill-category-title">Leadership & Business</div>
+            <div class="skills-list">Team Leadership, Technical Mentoring, Project Management, Stakeholder Management, Financial Services Industry, Energy Sector, Vendor Management, Strategic Planning</div>
+        </div>
+    </div>
+
+    <h3>Certifications</h3>
+    
+    <div class="certification-item">
+        <div class="cert-title">AWS Certifications</div>
+        <ul class="cert-list">
+            <li>AWS Certified AI Practitioner</li>
+            <li>AWS Certified Solutions Architect</li>
+            <li>AWS Certified Cloud Practitioner</li>
+            <li>AWS Generative AI Foundational (L100)</li>
+            <li>AWS Knowledge: Networking Core</li>
+            <li>AWS Financial Services</li>
+            <li>Well-Architected Proficient</li>
+            <li>AWS Partner: Cloud Economics Accreditation</li>
+        </ul>
+    </div>
+    
+    <div class="certification-item">
+        <div class="cert-title">Security & Cloud Certifications</div>
+        <ul class="cert-list">
+            <li>CISSP® - Certified Information Systems Security Professional</li>
+            <li>CCSP (ISC)2 Certified Cloud Security Professional</li>
+            <li>Microsoft Certified: Azure Fundamentals</li>
+            <li>Architecting Azure Infrastructure</li>
+        </ul>
+    </div>
+    
+    <div class="certification-item">
+        <div class="cert-title">Network & Infrastructure Certifications</div>
+        <ul class="cert-list">
+            <li>CCSP - Cisco Certified Security Professional</li>
+            <li>CCNA - Cisco Certified Network Associate</li>
+            <li>CCNP - Cisco Certified Network Professional</li>
+        </ul>
+    </div>
+
+    <script>
+        // Auto-print functionality
+        window.addEventListener('load', function() {
+            // Check if this page was opened for printing
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('print') === 'true') {
+                setTimeout(() => {
+                    window.print();
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>

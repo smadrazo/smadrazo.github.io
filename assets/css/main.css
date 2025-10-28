@@ -127,7 +127,6 @@ body {
 .container {
     max-width: 900px;
     margin: 2rem auto;
-    background-color: #ffffff;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     overflow: hidden;
@@ -135,6 +134,8 @@ body {
     position: relative;
     padding: 3rem 2.5rem;
     transition: all 0.3s ease;
+    /* Default background - will be overridden by specific containers */
+    background-color: #ffffff;
 }
 
 .container:hover {
@@ -144,11 +145,11 @@ body {
 
 .section {
     margin-bottom: 3rem;
-    background-color: #f7fafc;
+    background-color: transparent;
     border-radius: 16px;
     padding: 2rem;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    border: none;
+    box-shadow: none;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -529,14 +530,16 @@ body {
     }
 }
 
-/* Section-Specific Container Styles */
+/* Section-Specific Container Styles - High Specificity */
 /* About Section - Warm Earth Tones */
-.about-container {
+.container.about-container,
+div.container.about-container {
     background: linear-gradient(135deg, #fefcfb 0%, #f7f3f0 100%) !important;
     border-left: 6px solid #d97706 !important;
 }
 
-.about-container::before {
+.container.about-container::before,
+div.container.about-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -560,12 +563,14 @@ body {
 }
 
 /* Experience Section - Professional Blue */
-.experience-container {
+.container.experience-container,
+div.container.experience-container {
     background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
     border-left: 6px solid #2563eb !important;
 }
 
-.experience-container::before {
+.container.experience-container::before,
+div.container.experience-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -585,12 +590,14 @@ body {
 }
 
 /* Education Section - Fresh Green */
-.education-container {
+.container.education-container,
+div.container.education-container {
     background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%) !important;
     border-left: 6px solid #059669 !important;
 }
 
-.education-container::before {
+.container.education-container::before,
+div.container.education-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -618,12 +625,14 @@ body {
 }
 
 /* Skills Section - Purple Innovation */
-.skills-container {
+.container.skills-container,
+div.container.skills-container {
     background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%) !important;
     border-left: 6px solid #7c3aed !important;
 }
 
-.skills-container::before {
+.container.skills-container::before,
+div.container.skills-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -651,12 +660,14 @@ body {
 }
 
 /* Certifications Section - Elegant Teal */
-.certifications-container {
+.container.certifications-container,
+div.container.certifications-container {
     background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%) !important;
     border-left: 6px solid #0d9488 !important;
 }
 
-.certifications-container::before {
+.container.certifications-container::before,
+div.container.certifications-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -683,6 +694,13 @@ body {
 .certifications-section .job-title {
     color: #134e4a !important;
 }
+
+/* Debug Test - Remove after confirming colors work */
+.about-container { border: 5px solid red !important; }
+.experience-container { border: 5px solid blue !important; }
+.education-container { border: 5px solid green !important; }
+.skills-container { border: 5px solid purple !important; }
+.certifications-container { border: 5px solid teal !important; }
 
 /* Print Styles */
 @media print {

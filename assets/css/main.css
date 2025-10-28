@@ -138,7 +138,147 @@ body {
 
 /* Main Content */
 .main-content {
+    padding: 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+}
+
+/* Container Variations */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    position: relative;
     padding: 3rem 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* About Section - Warm Earth Tones */
+.about-section .container {
+    background: linear-gradient(135deg, #fefcfb 0%, #f7f3f0 100%);
+    border-left: 6px solid #d97706;
+}
+
+.about-section .container::before {
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+}
+
+.about-section .section-title {
+    color: #92400e;
+}
+
+.about-section .section-title::before {
+    background: #d97706;
+}
+
+.about-section .summary {
+    color: #78716c;
+}
+
+/* Experience Section - Professional Blue */
+.experience-section .container {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-left: 6px solid #2563eb;
+}
+
+.experience-section .container::before {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+}
+
+.experience-section .section-title {
+    color: #1e40af;
+}
+
+.experience-section .section-title::before {
+    background: #2563eb;
+}
+
+/* Education Section - Fresh Green */
+.education-section .container {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    border-left: 6px solid #059669;
+}
+
+.education-section .container::before {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.education-section .section-title {
+    color: #047857;
+}
+
+.education-section .section-title::before {
+    background: #059669;
+}
+
+.education-section .degree {
+    color: #065f46;
+}
+
+.education-section .school {
+    color: #059669;
+}
+
+/* Skills Section - Purple Innovation */
+.skills-section .container {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border-left: 6px solid #7c3aed;
+}
+
+.skills-section .container::before {
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+}
+
+.skills-section .section-title {
+    color: #6d28d9;
+}
+
+.skills-section .section-title::before {
+    background: #7c3aed;
+}
+
+.skills-section .skill-category::before {
+    background: #7c3aed;
+}
+
+.skills-section .skill:hover {
+    background: #7c3aed;
+}
+
+/* Certifications Section - Elegant Teal */
+.certifications-section .container {
+    background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+    border-left: 6px solid #0d9488;
+}
+
+.certifications-section .container::before {
+    background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+}
+
+.certifications-section .section-title {
+    color: #0f766e;
+}
+
+.certifications-section .section-title::before {
+    background: #0d9488;
+}
+
+.certifications-section .certification-item {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.certifications-section .job-title {
+    color: #134e4a;
 }
 
 .section {
@@ -417,6 +557,7 @@ body {
     .container {
         margin: 1rem;
         border-radius: 12px;
+        padding: 2rem 1.5rem;
     }
 
     .skills-grid {
@@ -428,6 +569,7 @@ body {
     .container {
         margin: 0.5rem;
         border-radius: 12px;
+        padding: 2rem 1.5rem;
     }
 
     .header {
@@ -455,7 +597,7 @@ body {
     }
 
     .main-content {
-        padding: 2rem 1.5rem;
+        padding: 0;
     }
 
     .section {
@@ -495,8 +637,9 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        margin: 0;
-        border-radius: 0;
+        margin: 0.25rem;
+        border-radius: 8px;
+        padding: 1.5rem 1rem;
     }
 
     .header {
@@ -508,7 +651,7 @@ body {
     }
 
     .main-content {
-        padding: 1.5rem 1rem;
+        padding: 0;
     }
 
     .section {

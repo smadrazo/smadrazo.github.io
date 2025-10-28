@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
             color: #000;
             background: #fff;
             margin: 0;
-            padding: 1rem;
+            padding: 0;
             font-size: 16px;
         }
 
@@ -25,6 +26,7 @@
             max-width: 800px;
             margin: 0 auto;
             background: #fff;
+            padding: 1rem;
         }
 
         .header {
@@ -197,7 +199,7 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            body {
+            .container {
                 padding: 0.5rem;
             }
 
@@ -272,18 +274,22 @@
                 page-break-inside: avoid;
             }
 
-            h1, h2, h3, h4 {
+            h1,
+            h2,
+            h3,
+            h4 {
                 page-break-after: avoid;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="navigation no-print">
         <a href="index.html" class="back-link">← Back to Interactive Resume</a>
         <a href="javascript:window.print()" class="back-link">🖨️ Print Resume</a>
     </div>
-    
+
     <div class="print-note no-print">
         <strong>Print-Friendly Version</strong> - Clean, professional layout optimized for printing and all devices
     </div>
@@ -292,7 +298,7 @@
         <div class="header">
             <h1 class="name">Sebastian Madrazo</h1>
             <h2 class="position">Sr. ProServe Cloud Architect, Single Threaded Leader (STL)</h2>
-            
+
             <div class="contact-info">
                 <div class="contact-item">
                     <span>sebastian@madrazo.com.ar</span>
@@ -319,17 +325,33 @@
             <div class="section">
                 <h3 class="section-title">About</h3>
                 <div class="summary">
-        Accomplished technology leader with 25+ years of progressive experience spanning network security, enterprise architecture, and cloud solutions across global Fortune 500 organizations. My career journey has evolved from technical support and systems administration at Siemens to security engineering leadership at Accenture, followed by 13 years of continuous advancement at ExxonMobil culminating in senior architect roles, and now serving in executive cloud architecture positions at Amazon Web Services.
-        
-        Throughout my career, I have consistently demonstrated the ability to translate complex business requirements into resilient technical solutions, leading multidisciplinary teams and driving strategic initiatives. My expertise encompasses the full spectrum of enterprise technology - from foundational network infrastructure and cybersecurity frameworks to modern cloud architectures and AI implementations. I have successfully architected and implemented critical systems serving millions of users, developed automation workflows that transformed operational efficiency, and established security standards that became organizational benchmarks.
-        
-        As a certified professional holding CISSP, CCSP, and multiple AWS certifications, I bring deep technical proficiency combined with proven leadership capabilities. My experience spans multiple industries including energy, financial services, and technology consulting, providing me with unique insights into diverse business challenges and regulatory requirements. I excel at building high-performing teams, mentoring technical talent, and fostering innovation while maintaining strict governance and compliance standards.
+                    Accomplished technology leader with 25+ years of progressive experience spanning network security,
+                    enterprise architecture, and cloud solutions across global Fortune 500 organizations. My career
+                    journey has evolved from technical support and systems administration at Siemens to security
+                    engineering leadership at Accenture, followed by 13 years of continuous advancement at ExxonMobil
+                    culminating in senior architect roles, and now serving in executive cloud architecture positions at
+                    Amazon Web Services.
+
+                    Throughout my career, I have consistently demonstrated the ability to translate complex business
+                    requirements into resilient technical solutions, leading multidisciplinary teams and driving
+                    strategic initiatives. My expertise encompasses the full spectrum of enterprise technology - from
+                    foundational network infrastructure and cybersecurity frameworks to modern cloud architectures and
+                    AI implementations. I have successfully architected and implemented critical systems serving
+                    millions of users, developed automation workflows that transformed operational efficiency, and
+                    established security standards that became organizational benchmarks.
+
+                    As a certified professional holding CISSP, CCSP, and multiple AWS certifications, I bring deep
+                    technical proficiency combined with proven leadership capabilities. My experience spans multiple
+                    industries including energy, financial services, and technology consulting, providing me with unique
+                    insights into diverse business challenges and regulatory requirements. I excel at building
+                    high-performing teams, mentoring technical talent, and fostering innovation while maintaining strict
+                    governance and compliance standards.
                 </div>
             </div>
 
             <div class="section">
                 <h3 class="section-title">Experience</h3>
-    
+
                 <div class="experience-item">
                     <div class="job-header">
                         <div class="job-info">
@@ -521,9 +543,11 @@
                 <div class="education-item">
                     <div class="degree">Professional Certifications</div>
                     <ul class="achievements">
-                        <li><strong>CISSP® - Certified Information Systems Security Professional</strong> - ISC2 (2010)</li>
+                        <li><strong>CISSP® - Certified Information Systems Security Professional</strong> - ISC2 (2010)
+                        </li>
                         <li><strong>CCSP (ISC)2 Certified Cloud Security Professional</strong> - ISC2 (2019)</li>
-                        <li><strong>CCSP - Cisco Certified Security Professional</strong> - Cisco Education (2008-2010)</li>
+                        <li><strong>CCSP - Cisco Certified Security Professional</strong> - Cisco Education (2008-2010)
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -533,39 +557,49 @@
                 <div class="skills-grid">
                     <div class="skill-category">
                         <div class="skill-category-title">Cloud Platforms & Services</div>
-                        <div class="skills-list">Amazon Web Services (AWS), Microsoft Azure, AWS ProServe, AWS AI/ML Services, AWS Well-Architected Framework, Azure Infrastructure, Hybrid Cloud Solutions, Multi-Cloud Architecture</div>
+                        <div class="skills-list">Amazon Web Services (AWS), Microsoft Azure, AWS ProServe, AWS AI/ML
+                            Services, AWS Well-Architected Framework, Azure Infrastructure, Hybrid Cloud Solutions,
+                            Multi-Cloud Architecture</div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <div class="skill-category-title">Architecture & Design</div>
-                        <div class="skills-list">Enterprise Architecture, Security Architecture, Cloud Architecture, Network Architecture, Data Center Architecture, TOGAF Methodology, Solution Architecture, Microservices Architecture</div>
+                        <div class="skills-list">Enterprise Architecture, Security Architecture, Cloud Architecture,
+                            Network Architecture, Data Center Architecture, TOGAF Methodology, Solution Architecture,
+                            Microservices Architecture</div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <div class="skill-category-title">Security & Compliance</div>
-                        <div class="skills-list">Cybersecurity Frameworks, Information Security, Cloud Security, Network Security, Governance & Compliance, Risk Management, Security Controls, Threat Analysis</div>
+                        <div class="skills-list">Cybersecurity Frameworks, Information Security, Cloud Security, Network
+                            Security, Governance & Compliance, Risk Management, Security Controls, Threat Analysis</div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <div class="skill-category-title">Network & Infrastructure</div>
-                        <div class="skills-list">Cisco Technologies, Network Design, Firewalls & IPS, VPN Solutions, Load Balancers, DNS & DHCP, Network Monitoring, Data Center Networking</div>
+                        <div class="skills-list">Cisco Technologies, Network Design, Firewalls & IPS, VPN Solutions,
+                            Load Balancers, DNS & DHCP, Network Monitoring, Data Center Networking</div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <div class="skill-category-title">DevOps & Automation</div>
-                        <div class="skills-list">Infrastructure as Code, CI/CD Pipelines, Infrastructure Automation, Workflow Automation, Configuration Management, Monitoring & Logging, Performance Optimization, Capacity Planning</div>
+                        <div class="skills-list">Infrastructure as Code, CI/CD Pipelines, Infrastructure Automation,
+                            Workflow Automation, Configuration Management, Monitoring & Logging, Performance
+                            Optimization, Capacity Planning</div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <div class="skill-category-title">Leadership & Business</div>
-                        <div class="skills-list">Team Leadership, Technical Mentoring, Project Management, Stakeholder Management, Financial Services Industry, Energy Sector, Vendor Management, Strategic Planning</div>
+                        <div class="skills-list">Team Leadership, Technical Mentoring, Project Management, Stakeholder
+                            Management, Financial Services Industry, Energy Sector, Vendor Management, Strategic
+                            Planning</div>
                     </div>
                 </div>
             </div>
 
             <div class="section">
                 <h3 class="section-title">Certifications</h3>
-                
+
                 <div class="certification-item">
                     <div class="cert-title">AWS Certifications</div>
                     <ul class="cert-list">
@@ -579,7 +613,7 @@
                         <li>AWS Partner: Cloud Economics Accreditation</li>
                     </ul>
                 </div>
-                
+
                 <div class="certification-item">
                     <div class="cert-title">Security & Cloud Certifications</div>
                     <ul class="cert-list">
@@ -589,7 +623,7 @@
                         <li>Architecting Azure Infrastructure</li>
                     </ul>
                 </div>
-                
+
                 <div class="certification-item">
                     <div class="cert-title">Network & Infrastructure Certifications</div>
                     <ul class="cert-list">
@@ -604,7 +638,7 @@
 
     <script>
         // Auto-print functionality
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             // Check if this page was opened for printing
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('print') === 'true') {
@@ -615,4 +649,5 @@
         });
     </script>
 </body>
+
 </html>

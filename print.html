@@ -552,17 +552,17 @@
         <p>&copy; 2025 Sebastian Madrazo. All rights reserved.</p>
     </footer>
 
-    <script></script>
-    // Auto-print functionality
-    window.addEventListener('load', function () {
-    // Check if this page was opened for printing
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('print') === 'true') {
-    setTimeout(() => {
-    window.print();
-    }, 500);
-    }
-    });
+    <script>
+        // Auto-print functionality
+        window.addEventListener('load', function() {
+            // Check if this page was opened for printing
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('print') === 'true') {
+                setTimeout(() => {
+                    window.print();
+                }, 500);
+            }
+        });
     </script>
 </body>
 

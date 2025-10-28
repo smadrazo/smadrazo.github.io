@@ -531,12 +531,12 @@ body {
 
 /* Section-Specific Container Styles */
 /* About Section - Warm Earth Tones */
-.about-section .container {
+.about-container {
     background: linear-gradient(135deg, #fefcfb 0%, #f7f3f0 100%) !important;
     border-left: 6px solid #d97706 !important;
 }
 
-.about-section .container::before {
+.about-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -560,12 +560,12 @@ body {
 }
 
 /* Experience Section - Professional Blue */
-.experience-section .container {
+.experience-container {
     background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
     border-left: 6px solid #2563eb !important;
 }
 
-.experience-section .container::before {
+.experience-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -585,12 +585,12 @@ body {
 }
 
 /* Education Section - Fresh Green */
-.education-section .container {
+.education-container {
     background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%) !important;
     border-left: 6px solid #059669 !important;
 }
 
-.education-section .container::before {
+.education-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -618,12 +618,12 @@ body {
 }
 
 /* Skills Section - Purple Innovation */
-.skills-section .container {
+.skills-container {
     background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%) !important;
     border-left: 6px solid #7c3aed !important;
 }
 
-.skills-section .container::before {
+.skills-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -651,12 +651,12 @@ body {
 }
 
 /* Certifications Section - Elegant Teal */
-.certifications-section .container {
+.certifications-container {
     background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%) !important;
     border-left: 6px solid #0d9488 !important;
 }
 
-.certifications-section .container::before {
+.certifications-container::before {
     content: '';
     position: absolute;
     top: 0;

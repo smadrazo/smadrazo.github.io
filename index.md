@@ -42,7 +42,7 @@ layout: default
 </header>
 
 <main class="main-content">
-    <div class="container">
+    <div class="container about-container">
         <section class="section about-section">
             <div class="section-container">
                 <h3 class="section-title">About</h3>
@@ -57,7 +57,7 @@ layout: default
         </section>
     </div>
 
-    <div class="container">
+    <div class="container experience-container">
         <section class="section experience-section">
             <div class="section-container">
                 <h3 class="section-title">Experience</h3>
@@ -221,7 +221,7 @@ layout: default
         </section>
     </div>
 
-    <div class="container">
+    <div class="container education-container">
         <section class="section education-section">
             <div class="section-container">
                 <h3 class="section-title">Education</h3>
@@ -247,7 +247,7 @@ layout: default
         </section>
     </div>
 
-    <div class="container">
+    <div class="container skills-container">
         <section class="section skills-section">
             <div class="section-container">
                 <h3 class="section-title">Technical Skills</h3>
@@ -340,7 +340,7 @@ layout: default
         </section>
     </div>
 
-    <div class="container">
+    <div class="container certifications-container">
         <section class="section certifications-section">
             <div class="section-container">
                 <h3 class="section-title">Certifications</h3>

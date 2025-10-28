@@ -695,13 +695,6 @@ div.container.certifications-container::before {
     color: #134e4a !important;
 }
 
-/* Debug Test - Remove after confirming colors work */
-.about-container { border: 5px solid red !important; }
-.experience-container { border: 5px solid blue !important; }
-.education-container { border: 5px solid green !important; }
-.skills-container { border: 5px solid purple !important; }
-.certifications-container { border: 5px solid teal !important; }
-
 /* Print Styles */
 @media print {
     .container {

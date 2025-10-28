@@ -1,0 +1,42 @@
+ORIGINAL EXXONMOBIL EXPERIENCE - BACKUP
+=====================================
+
+1. Data Center Solution Architect, IT Fellow | ExxonMobil | February 2021 - November 2021
+• Architected enterprise data center solutions and infrastructure
+• Led technical design and implementation of critical systems
+• Provided expertise across multiple technical domains
+• Mentored technical teams and drove strategic initiatives
+
+2. Cloud Connectivity System Architect | ExxonMobil | April 2019 - February 2021
+• Designed cloud connectivity solutions for global enterprise infrastructure
+• Implemented network architecture for hybrid cloud environments
+• Developed automation workflows and best practices
+• Managed network capacity and performance optimization
+
+3. Network System Architect | ExxonMobil | August 2017 - April 2019
+• Architected global network systems and infrastructure solutions
+• Led network engineering and design initiatives
+• Implemented enterprise-scale network security solutions
+• Managed critical network infrastructure and performance
+
+4. Technical Lead - Global Engineering & Technical Support | ExxonMobil | February 2015 - August 2017
+• Led global engineering teams and technical support operations
+• Drove delivery of quality products and services aligned with strategic objectives
+• Provided technical expertise and mentorship across multiple domains
+• Interfaced with customers and senior professionals on critical initiatives
+• Developed service strategy, workflow automation, and best practices
+
+5. Network & Voice - Global Engineering & Technical Support | ExxonMobil | February 2013 - August 2015
+• Engineered data center solutions and network infrastructure
+• Provided technical support for critical technologies and services
+• Developed automation workflows and maintained service standards
+• Managed network capacity, performance, and vendor relationships
+
+6. Network Security Engineering & Technical Support | ExxonMobil | January 2009 - February 2013
+• Engineered and implemented network security controls and infrastructure
+• Automated malicious site blocking with Cisco ASA
+• Served as Cisco IPS Primary Technical Steward
+• Implemented security threat processes and coordinated deployment activities
+
+=====================================
+Saved on: 2025-01-27

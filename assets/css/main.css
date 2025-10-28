@@ -13,16 +13,16 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    background-color: #f8fafc;
-    color: #1f2937;
+    background-color: #f5f5f5;
+    color: #2d2d2d;
 }
 
 
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
-    color: white;
+    background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
+    color: #f8f8f8;
     padding: 4rem 2rem 3rem;
     position: relative;
 }
@@ -38,7 +38,7 @@ body {
     font-weight: 700;
     margin-bottom: 0.75rem;
     letter-spacing: -0.02em;
-    color: white;
+    color: #f8f8f8;
 }
 
 .position {
@@ -47,7 +47,7 @@ body {
     margin-bottom: 2.5rem;
     opacity: 0.95;
     letter-spacing: 0.025em;
-    color: white;
+    color: #f8f8f8;
 }
 
 .contact-info {
@@ -83,7 +83,7 @@ body {
 }
 
 .contact-item a {
-    color: white;
+    color: #f8f8f8;
     text-decoration: none;
     font-weight: 500;
 }
@@ -96,9 +96,9 @@ body {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(248, 248, 248, 0.1);
+    color: #f8f8f8;
+    border: 1px solid rgba(248, 248, 248, 0.2);
     padding: 0.75rem 1.25rem;
     border-radius: 12px;
     cursor: pointer;
@@ -112,14 +112,14 @@ body {
 }
 
 .print-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(248, 248, 248, 0.2);
     transform: translateY(-2px);
 }
 
 /* Main Content */
 .main-content {
     padding: 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
     min-height: 100vh;
 }
 
@@ -127,15 +127,15 @@ body {
 .container {
     max-width: 900px;
     margin: 1.5rem auto;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.15);
     border-radius: 24px;
     overflow: hidden;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #d0d0d0;
     position: relative;
     padding: 2rem 2rem;
     transition: all 0.3s ease;
     /* Default background - will be overridden by specific containers */
-    background-color: #ffffff;
+    background-color: #fafafa;
 }
 
 .container:hover {
@@ -173,7 +173,7 @@ body {
 .section-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #1a1a1a;
     margin-bottom: 1.5rem;
     position: relative;
     display: flex;
@@ -200,7 +200,7 @@ body {
 .summary {
     font-size: 1rem;
     line-height: 1.6;
-    color: #4a5568;
+    color: #3a3a3a;
 }
 
 /* Experience */
@@ -531,11 +531,11 @@ body {
 }
 
 /* Section-Specific Container Styles - High Specificity */
-/* About Section - Warm Earth Tones */
+/* About Section - Light Salt */
 .container.about-container,
 div.container.about-container {
-    background: linear-gradient(135deg, #fefcfb 0%, #f7f3f0 100%) !important;
-    border-left: 6px solid #d97706 !important;
+    background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%) !important;
+    border-left: 6px solid #6a6a6a !important;
 }
 
 .container.about-container::before,
@@ -546,27 +546,27 @@ div.container.about-container::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%) !important;
+    background: linear-gradient(135deg, #6a6a6a 0%, #5a5a5a 100%) !important;
     z-index: 10;
 }
 
 .about-section .section-title {
-    color: #92400e !important;
+    color: #1a1a1a !important;
 }
 
 .about-section .section-title::before {
-    background: #d97706 !important;
+    background: #6a6a6a !important;
 }
 
 .about-section .summary {
-    color: #78716c !important;
+    color: #2d2d2d !important;
 }
 
-/* Experience Section - Professional Blue */
+/* Experience Section - Medium Pepper */
 .container.experience-container,
 div.container.experience-container {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
-    border-left: 6px solid #2563eb !important;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ebebeb 100%) !important;
+    border-left: 6px solid #4a4a4a !important;
 }
 
 .container.experience-container::before,
@@ -577,23 +577,23 @@ div.container.experience-container::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%) !important;
+    background: linear-gradient(135deg, #4a4a4a 0%, #3a3a3a 100%) !important;
     z-index: 10;
 }
 
 .experience-section .section-title {
-    color: #1e40af !important;
+    color: #1a1a1a !important;
 }
 
 .experience-section .section-title::before {
-    background: #2563eb !important;
+    background: #4a4a4a !important;
 }
 
-/* Education Section - Fresh Green */
+/* Education Section - Light Pepper */
 .container.education-container,
 div.container.education-container {
-    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%) !important;
-    border-left: 6px solid #059669 !important;
+    background: linear-gradient(135deg, #fafafa 0%, #f2f2f2 100%) !important;
+    border-left: 6px solid #5a5a5a !important;
 }
 
 .container.education-container::before,
@@ -604,31 +604,31 @@ div.container.education-container::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+    background: linear-gradient(135deg, #5a5a5a 0%, #4a4a4a 100%) !important;
     z-index: 10;
 }
 
 .education-section .section-title {
-    color: #047857 !important;
+    color: #1a1a1a !important;
 }
 
 .education-section .section-title::before {
-    background: #059669 !important;
+    background: #5a5a5a !important;
 }
 
 .education-section .degree {
-    color: #065f46 !important;
+    color: #2d2d2d !important;
 }
 
 .education-section .school {
-    color: #059669 !important;
+    color: #4a4a4a !important;
 }
 
-/* Skills Section - Purple Innovation */
+/* Skills Section - Dark Salt */
 .container.skills-container,
 div.container.skills-container {
-    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%) !important;
-    border-left: 6px solid #7c3aed !important;
+    background: linear-gradient(135deg, #f2f2f2 0%, #e8e8e8 100%) !important;
+    border-left: 6px solid #3a3a3a !important;
 }
 
 .container.skills-container::before,
@@ -639,31 +639,31 @@ div.container.skills-container::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%) !important;
+    background: linear-gradient(135deg, #3a3a3a 0%, #2d2d2d 100%) !important;
     z-index: 10;
 }
 
 .skills-section .section-title {
-    color: #6d28d9 !important;
+    color: #1a1a1a !important;
 }
 
 .skills-section .section-title::before {
-    background: #7c3aed !important;
+    background: #3a3a3a !important;
 }
 
 .skills-section .skill-category::before {
-    background: #7c3aed !important;
+    background: #3a3a3a !important;
 }
 
 .skills-section .skill:hover {
-    background: #7c3aed !important;
+    background: #3a3a3a !important;
 }
 
-/* Certifications Section - Elegant Teal */
+/* Certifications Section - Deep Pepper */
 .container.certifications-container,
 div.container.certifications-container {
-    background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%) !important;
-    border-left: 6px solid #0d9488 !important;
+    background: linear-gradient(135deg, #ebebeb 0%, #dedede 100%) !important;
+    border-left: 6px solid #2d2d2d !important;
 }
 
 .container.certifications-container::before,
@@ -674,25 +674,25 @@ div.container.certifications-container::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%) !important;
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
     z-index: 10;
 }
 
 .certifications-section .section-title {
-    color: #0f766e !important;
+    color: #1a1a1a !important;
 }
 
 .certifications-section .section-title::before {
-    background: #0d9488 !important;
+    background: #2d2d2d !important;
 }
 
 .certifications-section .certification-item {
-    background: rgba(255, 255, 255, 0.8) !important;
+    background: rgba(250, 250, 250, 0.9) !important;
     backdrop-filter: blur(10px);
 }
 
 .certifications-section .job-title {
-    color: #134e4a !important;
+    color: #2d2d2d !important;
 }
 
 /* Print Styles */

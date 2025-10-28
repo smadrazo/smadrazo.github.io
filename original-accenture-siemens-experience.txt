@@ -1,0 +1,23 @@
+ORIGINAL ACCENTURE & SIEMENS EXPERIENCE - BACKUP
+================================================
+
+1. Security Engineer Team Lead | Accenture | March 2008 - December 2008
+• Led security engineering team and network security infrastructure implementation
+• Coordinated installation of firewalls, VPN switches, and intrusion detection systems
+• Managed network security deployment activities and customer interactions
+• Researched and resolved technology problems in global network environments
+
+2. Security Engineer | Accenture | January 2007 - March 2008
+• Administered global IGA firewalls (Check Point Firewall-1)
+• Managed critical security infrastructure including DNS, authentication servers
+• Supported incident investigations as part of CIRC processes
+• Analyzed forensic reports and investigated security anomalies
+
+3. Technical Support Carrier ON - R-NCC LATINOAMERICA | Siemens S.A | December 1999 - January 2007
+• Administered ICSI and ICTS systems for Siemens Latin America
+• Designed system interfaces between ICSI and other enterprise systems
+• Provided technical support for network equipment and management software
+• Supported security solutions for data networks and NGN technologies
+
+================================================
+Saved on: 2025-01-27

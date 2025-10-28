@@ -161,7 +161,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: #3b82f6;
+    background: #4a4a4a;
     border-radius: 16px 16px 0 0;
 }
 
@@ -185,7 +185,7 @@ body {
     content: '';
     width: 4px;
     height: 2rem;
-    background: #3b82f6;
+    background: #4a4a4a;
     border-radius: 2px;
 }
 
@@ -193,7 +193,7 @@ body {
     content: '';
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, #e2e8f0 0%, transparent 100%);
+    background: linear-gradient(90deg, #d0d0d0 0%, transparent 100%);
 }
 
 /* Summary */
@@ -222,7 +222,7 @@ body {
     left: 0;
     width: 4px;
     height: 100%;
-    background: #3b82f6;
+    background: #4a4a4a;
     opacity: 0;
     transition: all 0.3s ease;
 }
@@ -230,7 +230,7 @@ body {
 .experience-item:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
     transform: translateX(4px);
-    border-color: #3b82f6;
+    border-color: #4a4a4a;
 }
 
 .experience-item:hover::before {
@@ -259,7 +259,7 @@ body {
 
 .company {
     font-weight: 600;
-    color: #3b82f6;
+    color: #4a4a4a;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -333,7 +333,7 @@ body {
 
 .school {
     font-weight: 500;
-    color: #3b82f6;
+    color: #4a4a4a;
 }
 
 .education-details {
@@ -365,13 +365,13 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: #3b82f6;
+    background: #4a4a4a;
 }
 
 .skill-category:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
-    border-color: #3b82f6;
+    border-color: #4a4a4a;
 }
 
 .skill-category-title {
@@ -407,11 +407,11 @@ body {
 }
 
 .skill:hover {
-    background: #3b82f6;
+    background: #4a4a4a;
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
-    border-color: #3b82f6;
+    border-color: #4a4a4a;
 }
 
 /* Responsive Design */
@@ -693,6 +693,26 @@ div.container.certifications-container::before {
 
 .certifications-section .job-title {
     color: #2d2d2d !important;
+}
+
+/* Footer */
+.footer {
+    background: #2d2d2d;
+    color: #f8f8f8;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 /* Print Styles */
